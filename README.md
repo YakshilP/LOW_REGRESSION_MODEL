@@ -15,6 +15,8 @@ pulled from SEC EDGAR and the Federal Reserve (FRED).
 ## Key Finding
 Ridge regression suggested all three macro variables mortgage rates, housing starts, and consumer sentiment contribute to predicting Lowe's quarterly revenue. However, once Lasso's penalty was properly scaled to match revenue's billion-dollar magnitude, it eliminated mortgage rate entirely, indicating its predictive information is redundant with housing starts and sentiment in this dataset. Notably, consumer sentiment showed a counterintuitive negative relationship with revenue likely because home improvement spending includes non-discretionary repairs that don't wait for consumer confidence to recover, a pattern visible in the data during the 2020 COVID quarter, when sentiment cratered even as revenue spiked.
 
+
+
 ## Data Sources
 - SEC EDGAR XBRL API (revenue)
 - FRED API (MORTGAGE30US, HOUST, UMCSENT)
